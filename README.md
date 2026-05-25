@@ -27,10 +27,10 @@ To build this business simulation (10 washers, 10 dryers, 2 vending machines), I
 
 ### Core Python Libraries Used
 
-* **`pandas`**: Used as the primary data manipulation engine to construct DataFrames, handle date ranges, execute data-type casting, and perform `.merge()` lookups to map dimension attributes to the fact table.
-* **`numpy`**: Leveraged for its vectorized mathematical functions and random sampling capabilities (`numpy.random`). This was critical for generating random-yet-constrained distributions for transaction frequencies, customer behavior, and cost variances.
+* **`pandas`**: Used as the primary data manipulation engine to construct DataFrames, handle date ranges, execute data type casting, and perform `.merge()` lookups to map dimension attributes to the fact table.
+* **`numpy`**: Leveraged for its vectorized mathematical functions and random sampling capabilities (`numpy.random`). This was critical for generating random (but constrained) distributions for transaction frequencies, customer behavior, and cost variances.
 * **`datetime` / `calendar`**: Utilized to manipulate timestamps, extract specific days of the week (to program weekend spikes), and isolate months (to calculate winter vs. summer utility variations).
-* **`math`**: Applied to model the logarithmic/logistic growth curves required to calculate the business's initial 6-month customer ramp-up period.
+* **`math`**: Applied to model the logarithmic/logistic growth curves required to calculate the business's initial ramp-up period.
 
 ---
 
