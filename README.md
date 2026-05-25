@@ -21,3 +21,19 @@ Because historical data for this specific footprint was unavailable, I engineere
 
 The final Tableau dashboard uses this data to identify peak months, evaluate washer/dryer revenue contribution, and provide actionable recommendations for off-peak promotions and maintenance scheduling.
 
+## Data Engineering 
+
+To build this business simulation (10 washers, 10 dryers, 2 vending machines), I developed a custom data generation pipeline in Python. The script programmatically enforces relational integrity, operational constraints, and realistic business logic across four tables.
+
+### 📦 Core Python Libraries Used
+
+* **`pandas`**: Used as the primary data manipulation engine to construct DataFrames, handle date ranges, execute data-type casting, and perform `.merge()` lookups to map dimension attributes to the fact table.
+* **`numpy`**: Leveraged for its vectorized mathematical functions and random sampling capabilities (`numpy.random`). This was critical for generating random-yet-constrained distributions for transaction frequencies, customer behavior, and cost variances.
+* **`datetime` / `calendar`**: Utilized to manipulate timestamps, extract specific days of the week (to program weekend spikes), and isolate months (to calculate winter vs. summer utility variations).
+* **`math`**: Applied to model the logarithmic/logistic growth curves required to calculate the business's initial 6-month customer ramp-up period.
+
+---
+
+### ⚙️ How the 4 Tables Were Developed
+
+The pipeline operates deterministically to build three **Dimension (Lookup) tables** before compiling the central **Fact (Transaction) table**:
