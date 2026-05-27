@@ -34,4 +34,4 @@ To build this business simulation (10 washers, 10 dryers, 2 vending machines), I
 
 ### How the 4 Tables Were Developed
 
-The pipeline operates to build three **Dimension (Lookup) tables** before compiling the central **Fact (Transaction) table**:
+The pipeline operates to build three **Dimension (Lookup) tables** before compiling the central **Fact (Transaction) table**
