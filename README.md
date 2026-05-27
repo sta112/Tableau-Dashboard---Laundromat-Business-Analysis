@@ -6,7 +6,7 @@ Markdown
 ## Interactive Dashboard
 Click the preview image below to view and interact with the live dashboard on Tableau Public.
 
-[![Tableau Dashboard Preview](dashboard_preview.png)](https://prod-ca-a.online.tableau.com/t/sophiatse51-925239984f/views/LaundromatDashboard/SalesDashboard)
+[![Tableau Dashboard Preview](Screen Shot 2026-05-25 at 2.07.37 PM.png)](https://prod-ca-a.online.tableau.com/t/sophiatse51-925239984f/views/LaundromatDashboard/SalesDashboard)
 
 ---
 
